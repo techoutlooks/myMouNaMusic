@@ -1,0 +1,59 @@
+<ion-header no-border >
+
+<ion-navbar color="danger" style="background-color: transparent" >
+  <ion-title style="color: white">{{ 'share' | translate}}</ion-title>
+</ion-navbar>
+</ion-header>
+
+<ion-content style="background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #000,#cb356b, #bd3f32); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #000,#cb356b, #bd3f32);text-align: center" >
+
+
+
+
+
+
+
+ <ion-list no-lines style="background-color: transparent">
+
+  <ion-item  block clear   style="background-color: transparent;color:white" >
+{{sms}}  </ion-item>
+
+  <ion-item  block clear (click)="share()"  style="background-color: transparent;color:white" >
+    <ion-avatar item-left>
+      <img class="shadow" src="{{art}}">
+    </ion-avatar>
+    <h2>{{title}}</h2>
+    <p style="color:azure">{{subtitle}}</p>
+  </ion-item>
+
+<br><hr>
+
+  <ion-item style="background-color: transparent;color:white" (click)="sharefb(art)">{{ 'shareOn' | translate}} Facebook</ion-item>
+  <ion-item style="background-color: transparent;color:white" (click)="sharewa(art)" >{{ 'shareOn' | translate}} Whatsapp</ion-item>
+  <ion-item style="background-color: transparent;color:white" (click)="shareig(art)" >{{ 'shareOn' | translate}} Instagram</ion-item>
+  <ion-item style="background-color: transparent;color:white" (click)="sharesms()" >{{ 'shareVia' | translate}}  SMS</ion-item>
+  <ion-item style="background-color: transparent;color:white" (click)="shareem(art)" >{{ 'shareVia' | translate}} Email</ion-item>
+
+
+</ion-list>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+
+</ion-content>
+
+
+
