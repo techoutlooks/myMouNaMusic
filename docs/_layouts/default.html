@@ -58,7 +58,7 @@
 
                         {% for file in site.static_files %}
                             {% if file.path contains 'assets/screenshots/screenshot-' %}
-                                <img class="appScreenshots" src="{{ file.path }}"/>
+                                <img class="appScreenshots" src="{{ site.github.baseurl }}{{ file.path }}"/>
                             {% endif %}
                         {% endfor %}
 
