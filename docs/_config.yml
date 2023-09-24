@@ -130,6 +130,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - assets/appicon.xcf
 
 collections:
   pages:
